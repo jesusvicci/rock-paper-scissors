@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 10px;
+    background-color: navy;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.container .title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #FFFFFF;
+}
+
+.container .options {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .options .option {
+    border: solid;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.container .options .option picture img {
+    width: 150px;
+}
+
+.container .button-area {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .button-area button {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px 50px;
+    cursor: pointer;
+    background-color: rgb(228, 228, 228);
+    border-radius: 15px;
+}
+
+.container .button-area button:hover {
+    background-color: rgb(182, 182, 182);
+}
