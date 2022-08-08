@@ -1,9 +1,9 @@
-let rock = document.querySelector('#rock');
-let paper = document.querySelector('#paper');
-let scissors = document.querySelector('#scissors');
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
 
-let player;
-let cpu;
+let player = 0;
+let cpu = 0;
 
 rock.addEventListener("click", () => {
     player = 1;
@@ -17,3 +17,8 @@ scissors.addEventListener("click", () => {
     player = 3;
 });
 
+function cpuSelection (min, max) {
+    return Math.round(Math.random() * (max - min) + min);
+}
+
+cpu = cpuSelection(1, 3);
